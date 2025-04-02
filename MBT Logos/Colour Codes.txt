@@ -1,0 +1,12 @@
+MBT Blue: #8cb9d5
+MBT Blue Darker: #93ccff
+
+Management Red: #ec4545
+
+Head Pink: #eb44c4
+
+Moderation Yellow: #ffcc00
+Support Green: #2bd82e
+Livery Orange: #ff8c3f
+Bug Blue: #10c9da
+
