@@ -77,30 +77,10 @@
    <body>
       <div class="container">
          <h1>The MyBusTimes Media Kit</h1>
-         <a href="#" id="downloadLink">Download</a>
+         <a href="MBTLogos.zip" id="downloadLink">Download</a>
       </div>
       <footer>
          <p>&copy; 2025 MyBusTimes. All rights reserved.</p>
       </footer>
-      <script>
-         document.getElementById('downloadLink').addEventListener('click', function(event) {
-            event.preventDefault();
-         
-            var zip = new JSZip();
-         
-            // Add files to the zip - you can list the logos and any other assets you want to include
-            zip.file('logo1.png', 'data:image/png;base64,...'); // replace with actual base64 or fetch the files
-            zip.file('logo2.png', 'data:image/png;base64,...'); // same as above
-         
-            // Generate the zip file and trigger download
-            zip.generateAsync({ type: 'blob' }).then(function(content) {
-                // Trigger the download of the zip file
-                var link = document.createElement('a');
-                link.href = URL.createObjectURL(content);
-                link.download = 'MBT-Logos.zip';
-                link.click();
-            });
-         });
-      </script>
    </body>
 </html>
